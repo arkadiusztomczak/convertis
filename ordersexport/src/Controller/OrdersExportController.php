@@ -111,7 +111,7 @@ class OrdersExportController extends FrameworkBundleAdminController{
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $task = $form->getData();
-            $selectedState = 0;
+            $selectedState = '';
             if($task->getState()>0) $selectedState = " AND o.current_state = ".$task->getState();
             $fromDate = $task->getFromDate();
             $dueDate = $task->getDueDate();
