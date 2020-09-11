@@ -1,0 +1,13 @@
+{
+  "name": "arkadiusz-tomczak/ordersexport",
+  "description": "Pobierz zestawienie produktów w pliku Excel. Zadanie rekrutacyjne Convertis nr 2.",
+  "autoload": {
+    "psr-4": {
+      "OrdersExport\\Controller\\": "src/Controller/"
+    }
+  },
+  "config": {
+    "prepend-autoloader": false
+  },
+  "type": "prestashop-module"
+}
